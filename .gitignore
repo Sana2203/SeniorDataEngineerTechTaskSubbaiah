@@ -19,3 +19,12 @@ pip-log.txt
 # OS related
 .DS_Store
 Thumbs.db
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db
+.coverage
+htmlcov/
+.DS_Store
