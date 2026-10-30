@@ -1,1 +1,27 @@
-Placeholder for any evidence you would like to supply.
+
+Senior Data Engineer Tech Task - Evidence
+
+1. ETL Execution
+   Command: cd etl_pipeline && python main.py
+   Evidence: Capture the terminal output showing the actual
+   number of users and posts loaded.
+
+2. Unit Tests
+   Command: PYTHONPATH=etl_pipeline pytest -v test
+   Evidence: Capture the test output and number of passing tests.
+
+3. Database Validation
+   Query: SELECT status, COUNT(*)
+          FROM sc_posts
+          GROUP BY status;
+   Evidence: Record the returned status counts.
+
+4. SQL Analysis
+   Execute all queries in sql/sample_queries.sql.
+   Evidence: Record the actual result rows in
+   sql/sample_queries_answers.md.
+
+5. Database
+   The generated SQLite database is sc_blog.db inside
+   the etl_pipeline directory. It can be recreated by running
+   the ETL script.
